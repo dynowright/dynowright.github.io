@@ -1,0 +1,33 @@
+body {
+  background-color: lightgray;
+  text-align: center;
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: darkgray;
+}
+
+p:first-letter {
+  font-size: 2em;
+}
