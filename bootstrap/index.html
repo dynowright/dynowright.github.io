@@ -3,39 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Frank Lloyd Wright Site</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      Frank Lloyd Wright
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Work
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#buildings">Buildings</a></li>
+            <li><a class="dropdown-item" href="#uso">Usonia</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#other">Other Work</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -44,112 +43,155 @@
     </div>
   </div>
 </nav>
-    <div class="py-4">  
-      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div class="container-fluid py-5 water">
-        <h1 class="display-5 fw-bold text-light">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4 text-light">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+
+  <div class="container py-4">
+      <div class="p-5 mb-4 bg-light rounded-3 water">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold text-light">Buildings by Frank Lloyd Wright</h1>
+          <p class="col-md-8 fs-4 text-light">Explore his architecture.</p>
+          <button class="btn btn-primary btn-lg" type="button">Check out some buildings</button>
+        </div>
       </div>
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-light border rounded-3 usonia">
+            <h2>Usonia</h2>
+            <p>What is the Usonian movement?</p>
+            <button class="btn btn-outline-light" type="button">Learn more</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-light border rounded-3 glass">
+            <h2>Other work</h2>
+            <p>FLW design elements throughout his work.</p>
+            <button class="btn btn-outline-light" type="button">Explore</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container py-5">
+<h1 id="about">About Frank Lloyd Wright</h1>
+<div class="row">
+  <div class="col-4">
+  <div class="card">
+    <img src="img/flwportrait.jpg" class="card-img-top img-fluid" alt="Frank Lloyd Wright">
+    <div class="card-body">
+      <p class="card-text">1867-1959</p>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                        <div class="card">
-              <img src="img/usonia.jpg" class="card-img-top" alt="Usonia">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-            </div> 
-            <div class="col">
-                        <div class="card">
-              <img src="img/glass.jpg" class="card-img-top" alt="Glass">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-            
-            </div> 
-        
-        
-        </div>
-    
-        </div>
-        
-        <div class="container">
-            <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
+</div>
+  <div class="col-8">
+  <div class="card">
+  <div class="card-body">
+    <p>Frank Lloyd Wright (June 8, 1867 – April 9, 1959) was an American architect, designer, writer, and educator. He designed more than 1,000 structures over a creative period of 70 years. Wright played a key role in the architectural movements of the twentieth century, influencing architects worldwide through his works and hundreds of apprentices in his Taliesin Fellowship.[1][2] Wright believed in designing in harmony with humanity and the environment, a philosophy he called organic architecture. This philosophy was exemplified in Fallingwater (1935), which has been called "the best all-time work of American architecture".[3]</p>
+    <p>
+    Wright was the pioneer of what came to be called the Prairie School movement of architecture and also developed the concept of the Usonian home in Broadacre City, his vision for urban planning in the United States. He also designed original and innovative offices, churches, schools, skyscrapers, hotels, museums, and other commercial projects. Wright-designed interior elements (including leaded glass windows, floors, furniture and even tableware) were integrated into these structures. He wrote several books and numerous articles and was a popular lecturer in the United States and in Europe. Wright was recognized in 1991 by the American Institute of Architects as "the greatest American architect of all time".[3] In 2019, a selection of his work became a listed World Heritage Site as The 20th-Century Architecture of Frank Lloyd Wright.</p>
+
+<p>Raised in rural Wisconsin, Wright studied civil engineering at the University of Wisconsin and then apprenticed in Chicago, briefly with Joseph Lyman Silsbee, and then with Louis Sullivan at Adler & Sullivan. Wright opened his own successful Chicago practice in 1893 and established a studio in his Oak Park, Illinois home in 1898. His fame increased and his personal life sometimes made headlines: leaving his first wife Catherine Tobin for Mamah Cheney in 1909; the murder of Mamah and her children and others at his Taliesin estate by a staff member in 1914; his tempestuous marriage with second wife Miriam Noel (m. 1923–1927); and his courtship and marriage with Olgivanna Lazović (m. 1928–1959).</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="container py-4">
+  <h1 id="buildings">Buildings</h1>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner rounded-3">
     <div class="carousel-item active">
+      <img src="img/fallingwater.jpg" class="d-block w-100" alt="Fallingwater">
+      <div class="carousel-caption d-none d-md-block">
+       <h5>Fallingwater</h5>
+       <p>Mill Run, PA</p>
+     </div>
+    </div>
+    <div class="carousel-item">
       <img src="img/gugg.jpg" class="d-block w-100" alt="Guggenheim">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+       <h5>Guggenheim Museum</h5>
+       <p>New York</p>
+     </div>
     </div>
     <div class="carousel-item">
-      <img src="img/palmer.jpg" class="d-block w-100" alt="Palmer House">
+      <img src="img/palmer.jpg" class="d-block w-100" alt="Palmer">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/fw.jpg" class="d-block w-100" alt="FW">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+       <h5>Palmer House</h5>
+       <p>Ann Arbor, MI</p>
+     </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-        
-        </div>
-        
-        <div class="bg-dark py-4">
-            <div class="row">
-                <div class="col text-light">
-                Frank Lloyd Wright
-                </div>
-                
-                <div class="col">
-                    <form class="d-flex" role="search">
+</div>
+</div>
+
+<div class="container py-4">
+  <h1 id="uso">Usonia</h1>
+  <div class="card text-center">
+
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">What is the Usonian movement?</h5>
+      <p class="card-text">Usonia (/juːˈsoʊniə/) is a word that was used by American architect Frank Lloyd Wright to refer to the United States in general (in preference to America), and more specifically to his vision for the landscape of the country, including the planning of cities and the architecture of buildings. Wright proposed the use of the adjective Usonian to describe the particular New World character of the American landscape as distinct and free of previous architectural conventions.</p>
+      <a href="https://franklloydwright.org/style/usonian/" class="btn btn-primary">Check out more</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+</div>
+  <div class="container py-4">
+    <h1 id="other">Other Work</h1>
+    <div class="card text-center">
+
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Other Works by FLW</h5>
+        <p class="card-text">Sculptures inspired by FLW works.</p>
+        <a href="https://shop.franklloydwright.org/collections/garden-sculptures?_ga=2.57327459.875797684.1667856647-976596442.1667215348" class="btn btn-primary">Go to FLW Shop</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+
+
+</div>
+
+<div class="px-4 py-4 bg-dark">
+  <div class="row">
+  <div class="col-6">
+    <p class="text-light text-center">FrankLloydWright.org</p>
+  </div>
+  <div class="col-6">
+    <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-                </div>
-            
-            
-            </div>
-        
-        </div>
-<!--
-    <h1>Hello, world!</h1>
-      
-      <div class="container bg-secondary">
-        <div class="row">
-          <div class="col-sm align-self-start text-primary"> One of three columns</div> 
-            <div class="col-sm align-self-center"> One of three columns</div>
-          <div class="col-sm align-self-end"> One of three columns</div>
-          </div>
-      </div>
-        </div> 
--->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
