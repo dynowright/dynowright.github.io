@@ -1,0 +1,20 @@
+.water {
+  background-image: url("../img/fallingwater.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.usonia {
+  background-image: url("../img/usonia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.glass {
+  background-image: url("../img/glass.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
